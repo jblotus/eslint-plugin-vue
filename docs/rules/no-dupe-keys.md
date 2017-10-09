@@ -15,16 +15,14 @@ export default {
   },
   computed: {
     foo: {
-      get () {
-      }
+      get () {}
     }
   },
   data: {
     foo: null
   },
   methods: {
-    foo () {
-    }
+    foo () {}
   }
 }
 ```
@@ -35,17 +33,15 @@ export default {
 export default {
   props: ['foo'],
   computed: {
-    bar () {
-    }
+    bar () {}
   },
   data () {
     return {
-      dat: null
+      baz: null
     }
   },
   methods: {
-    test () {
-    }
+    boo () {}
   }
 }
 ```
@@ -60,7 +56,7 @@ This rule has an object option:
 
 ```
 vue/no-dupe-keys: [2, {
-  groups: ['asyncComputed']
+  groups: ['firebase']
 }]
 ```
 
@@ -71,7 +67,7 @@ export default {
   computed: {
     foo () {}
   },
-  asyncComputed: {
+  firebase: {
     foo () {}
   }
 }

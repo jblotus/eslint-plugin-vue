@@ -13,16 +13,14 @@ export default {
   },
   computed: {
     $on: {
-      get () {
-      }
+      get () {}
     }
   },
   data: {
     _foo: null
   },
   methods: {
-    $nextTick () {
-    }
+    $nextTick () {}
   }
 }
 ```
@@ -40,7 +38,7 @@ This rule has an object option:
 ```
 vue/no-reserved-keys: [2, {
   reserved: ['foo', 'foo2'],
-  groups: ['asyncComputed']
+  groups: ['firebase']
 }]
 ```
 
@@ -48,11 +46,11 @@ vue/no-reserved-keys: [2, {
 
 ```js
 export default {
-  asyncComputed: {
-    foo2 () {}
-  },
   computed: {
     foo () {}
+  },
+  firebase: {
+    foo2 () {}
   }
 }
 ```
